@@ -1,0 +1,14 @@
+Start time: 17-Jun-2025 17:39:49
+
+path_results =
+
+    '../Output_CRCNS/Culture1DIV24/'
+
+Bin size (steps): 20
+
+[1/1] Processing Cult
+  Binarized (nNeurons = 60, nbins = 15397)
+  Rate saved: ../Output_CRCNS/Culture1DIV24/TECN_TE_binsize1/Cult_rate.txt
+  Computing EC measures (maxdelay=10)...
+  Distance matrix saved: ../Output_CRCNS/Culture1DIV24/TECN_TE_binsize1/Cult_DistanceMat.mat
+End time: 17-Jun-2025 17:39:52
