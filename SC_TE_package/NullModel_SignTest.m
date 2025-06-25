@@ -21,7 +21,13 @@
 % Returns:
 %
 %   void funtion
-%   [ABOUT NULL MODEL:] saves TE matrix for each permutation (for each culture in list_cultures)
+%
+
+%
+% Stores:
+%
+%   for each EC metric: P-value matrix (and related counts matrix), Zscored_EC matrix (based on jittered test)
+%
 
 
 %==============================================================================%

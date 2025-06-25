@@ -44,7 +44,7 @@ function Calculate_TE_CN(path_data, list_cultures, path_results_TE, path_results
     if nargin<9, CI_tau_window = 5; end
 
     list_to_load = strcat(path_data, list_cultures, ".mat");
-    nCult = numel(list_cultures);
+    nCult        = numel(list_cultures);
 
     for idx = 1:nCult
         data = load(list_to_load(idx));
@@ -53,8 +53,8 @@ function Calculate_TE_CN(path_data, list_cultures, path_results_TE, path_results
         % Binarize spike trains, handling empty entries
         binIdx = cellfun(@(sp) reshape(floor(sp / binsize) + 1, [], 1),  data.spikes, 'UniformOutput', false);
 
-        rows = repelem((1:data.nNeurons)', cellfun(@numel, binIdx));
-        cols = vertcat(binIdx{:});
+        rows  = repelem((1:data.nNeurons)', cellfun(@numel, binIdx));
+        cols  = vertcat(binIdx{:});
         nbins = max([1; cols]);
 
         binarized = sparse(rows, cols, true, data.nNeurons, nbins);
@@ -65,7 +65,7 @@ function Calculate_TE_CN(path_data, list_cultures, path_results_TE, path_results
         asdf = SparseToASDF(binarized, 1);
 
         % Compute rate
-        rate = full(sum(binarized,2)'/nbins);
+        rate  = full(sum(binarized,2)'/nbins);
         fname = fullfile(path_results_TE, list_cultures{idx} + "_rate.txt");
         writematrix(rate, fname, 'Delimiter','\t');
         fprintf('  Rate saved: %s\n', fname);

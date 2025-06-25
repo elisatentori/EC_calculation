@@ -58,7 +58,7 @@ void transent_1
  const TimeType y_delay,
  const TimeType duration,
  double *te_result,
- double *coincidence_result);  //# Modifica: Aggiunto coincidence_result come parametro
+ double *coincidence_result);  //# Modified: Added coincidence_result as an output
 
 
 void transent_ho
@@ -67,7 +67,7 @@ void transent_ho
  const TimeType y_delay,
  const TimeType duration,
  double *te_result,
- double *coincidence_result);  //# Modifica: Aggiunto coincidence_result come parametro
+ double *coincidence_result);  //# Modified: Added coincidence_result as an output
 
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[]) {
@@ -78,7 +78,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
   double *data_ptr;
   mxArray *array_ptr;
 
-  if (nlhs > 2) {  // Modifica: Cambiato il controllo per due output //#
+  if (nlhs > 2) {  // Modified: Changed control (now for 2 outputs) //#
         mexErrMsgTxt("Expected only two output arguments");  //#
   }
 
@@ -115,22 +115,22 @@ void mexFunction(int nlhs, mxArray *plhs[],
 
   /* Create result matrix */
 	plhs[0] = mxCreateDoubleMatrix(series_count, series_count, mxREAL);
-    plhs[1] = mxCreateDoubleMatrix(series_count, series_count, mxREAL);   //# Modifica: Creazione matrice coincidence_result
+    plhs[1] = mxCreateDoubleMatrix(series_count, series_count, mxREAL);   //# Modified: Create matrix coincidence_result
     
   /* Do calculation */
   data_ptr = mxGetPr(plhs[0]);
-  double *coincidence_result = mxGetPr(plhs[1]);  //# Modifica: Pointer to coincidence_result //#
+  double *coincidence_result = mxGetPr(plhs[1]);  //# Modified: Pointer to coincidence_result //#
 
   if ((x_order == 1) && (y_order == 1)) {
     transent_1(prhs[0], series_count,
                y_delay, duration,
-               data_ptr, coincidence_result);  //# Modifica: Passaggio di coincidence_result //#
+               data_ptr, coincidence_result);  //# Modified: Passage of coincidence_result //#
 
   } else {
     transent_ho(prhs[0], series_count,
                 x_order, y_order,
                 y_delay, duration,
-                data_ptr, coincidence_result);  //# Modifica: Passaggio di coincidence_result //#
+                data_ptr, coincidence_result);  //# Modified: Passage of coincidence_result //#
   }
 }
 
@@ -143,7 +143,7 @@ void transent_1
 (const mxArray *all_series, const mwSize series_count,
  const TimeType y_delay,
  const TimeType duration,
- double *te_result, double *coincidence_result) {  // Modifica: Aggiunto coincidence_result come parametro //#
+ double *te_result, double *coincidence_result) {  //# Modified: Added coincidence_result as an output //#
 
   /* Constants */
   const unsigned int x_order = 1, y_order = 1,                
@@ -189,7 +189,7 @@ void transent_1
 
       if ((i_size == 0) || (j_size == 0)) {
         te_result[(i * series_count) + j] = 0;
-        coincidence_result[(i * series_count) + j] = 0;  //# Modifica: Inizializza la cella delle coincidenze a zero //#
+        coincidence_result[(i * series_count) + j] = 0;  //# Modified: Coincidences initialization to zero //#
 
         continue;
       }
@@ -223,7 +223,7 @@ void transent_1
 
       /* Count spikes */
       memset(counts, 0, sizeof(TimeType) * num_counts);
-      TimeType coincidence_count = 0;  //# Modifica: Inizializza il conteggio delle coincidenze //#
+      TimeType coincidence_count = 0;  //# Modified: Initializes the num of coincidences computation //#
 
       /* Get minimum next time bin */
       cur_time = ord_times[0];
@@ -308,7 +308,7 @@ void transent_1
 
       /* MATLAB is column major, but flipped for compatibility */
       te_result[(i * series_count) + j] = te_final;
-      coincidence_result[(i * series_count) + j] = coincidence_count;  // Modifica: Assegna il conteggio delle coincidenze //#
+      coincidence_result[(i * series_count) + j] = coincidence_count;  // Modified: assignes the number of coincidences //#
 
 
     } /* for i */
@@ -327,7 +327,7 @@ void transent_ho
  const unsigned int x_order, const unsigned int y_order,
  const TimeType y_delay,
  const TimeType duration,
- double *te_result, double *coincidence_result) {  //# Modifica: Aggiunto coincidence_result come parametro //#
+ double *te_result, double *coincidence_result) {  //# Modified: Added coincidence_result as an output //#
 
 
   /* Constants */
@@ -372,7 +372,7 @@ void transent_ho
       j_series = mxGetPr(array_ptr);
 
       if ((i_size == 0) || (j_size == 0)) {
-        coincidence_result[(i * series_count) + j] = 0;  //# Modifica: Inizializza la cella delle coincidenze a zero //#
+        coincidence_result[(i * series_count) + j] = 0;  //# Modified: Init coincidence_result to zero //#
         te_result[(i * series_count) + j] = 0;
 		continue;
       }
@@ -410,7 +410,7 @@ void transent_ho
 
       /* Count spikes */
       memset(counts, 0, sizeof(TimeType) * num_counts);
-      TimeType coincidence_count = 0;  //# Modifica: Inizializza il conteggio delle coincidenze
+      TimeType coincidence_count = 0;  //# Modified: Init coincidence_count to zero
 
       /* Get minimum next time bin */
       cur_time = ord_times[0];
@@ -456,7 +456,7 @@ void transent_ho
         }
         
         /*
-        if (code == (1 << x_order) + 1) {  // Coincidenza specifica tra X(t) e Y(t-y_delay)
+        if (code == (1 << x_order) + 1) {  // Coincidence betw X(t) e Y(t-y_delay)
             ++coincidence_count;
         }
         */
@@ -502,7 +502,7 @@ void transent_ho
 
       /* MATLAB is column major, but flipped for compatibility */
       te_result[(i * series_count) + j] = te_final;
-      coincidence_result[(i * series_count) + j] = coincidence_count;  //# Modifica: Assegna il conteggio delle coinc.
+      coincidence_result[(i * series_count) + j] = coincidence_count;  //# Modified: Assigning count to coincidence_result
 
 
     } /* for i */
