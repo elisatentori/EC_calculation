@@ -120,7 +120,7 @@ __
     </ul>
   </li>
 
-  <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Notebooks_ECoutputs" target="_blank"> Notebooks_ECoutputs</a>:
+  <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Notebooks_ECoutputs" target="_blank">demo_TE_SC_calculation/Notebooks_ECoutputs</a>:
     <ul>
     <li>  <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/Notebooks_ECoutputs/ongoing_activity_and_EC_visualization.ipynb" target="_blank"> ongoing_activity_and_EC_visualization.ipynb</a>: to manage spike-trains and visualize EC</li>
     <li>  <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/Notebooks_ECoutputs/utils" target="_blank"> utils</a>: functions useful for anaysis</li>
@@ -128,10 +128,8 @@ __
   </li>
 </ul>
 
-%=======================================================================%
-% Copyright (c) 2025, University of Padua, Italy                        %
-% All rights reserved.                                                  %
-%                                                                       %
-% Authors: Elisa Tentori (elisa.tentori@phd.unipd.it)                   %
-%          LiPh Lab - NeuroChip Lab, University of Padua, Italy         %
-%=======================================================================%
+<br><br><br>
+% Copyright (c) 2025, University of Padua, Italy<br>
+% All rights reserved.<br>
+% Author: Elisa Tentori    <br>                
+%          LiPh Lab - NeuroChip Lab, University of Padua, Italy   <br>
