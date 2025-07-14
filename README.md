@@ -1,10 +1,8 @@
 # Effective Connectivity calculation
 
-Package for Transfer Entropy, Cross-correlation and Cross-covariance Calculation and analysis
+Package for Transfer Entropy, Cross-correlation and Cross-covariance Calculation and analysis.<br>
+Code supporting <a href="https://www.biorxiv.org/content/10.1101/2025.04.29.651327v2" target="_blank">  "Spontaneous Dynamics Predict the Effects of Targeted Intervention in Hippocampal Neuronal Cultures"</a>, bioRxiv
 
-Author: Elisa Tentori (University of Padua)
-
-Date:   May 2025
 
 ## Contents:
 
