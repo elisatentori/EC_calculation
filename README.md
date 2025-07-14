@@ -52,35 +52,35 @@ Last two cells contains special information of the data.
 ### 3. Functions
 
 <ul>
-  <li>**TE, SC and XCov Calculation:**<br>
+  <li><b>TE, SC and XCov Calculation:</b><br>
   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFTE_CN.m" target="_blank"> ASDFTE_CN.m</a>:      (requires transentmex) delayed higher order TE calculator for ASDF.<br>
    ASDFTE_CN_perm.m:
   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFTE_CN_perm.m" target="_blank"> ASDFTE_CN_perm.m</a>: (requires transentmex) delayed higher order TE calculator for ASDF and ASDF2.<br>
    <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/Calculate_TE_CN.m" target="_blank"> Calculate_TE_CN.m</a>: TE, SC, XCov (and related Z-scored measures) + CI Calculation<br>
    <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/CIReduce.m" target="_blank"> CIReduce.m</a>:        Computes CI for any EC metric<br>
-   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/save_all_measures.m" target="_blank"> save_all_measures.m</a>: saves data in .mat files <br>
-   </li> 
+   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/save_all_measures.m" target="_blank"> save_all_measures.m</a>: saves data in .mat files 
+   </li> <br>
     
-   <li>**Significance test:**<br>
-   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/NullModel_SignTest.m" target="_blank"> NullModel_SignTest.m</a>: jitter test<br>
-   </li>
+   <li><b>Significance test:</b><br>
+   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/NullModel_SignTest.m" target="_blank"> NullModel_SignTest.m</a>: jitter test
+   </li><br>
    
-  <li>**Changing Data Format:** <br>
-   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/SparseToASDF.m" target="_blank"> SparseToASDF.m</a>: Convert matrix form of raster to ASDF.<br>
-  </li>
+  <li><b>Changing Data Format:</b> <br>
+   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/SparseToASDF.m" target="_blank"> SparseToASDF.m</a>: Convert matrix form of raster to ASDF.
+  </li><br>
   
-   <li> **ASDF utilities:** <br>
+   <li> <b>ASDF utilities:</b> <br>
    <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFSubsample.m" target="_blank"> ASDFSubsample.m</a>:     Subsample specified neurons from ASDF.<br>
    <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFChooseTime.m" target="_blank"> ASDFChooseTime.m</a>:    Crop a time segment from larger ASDF.<br>
    <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFGetfrate.m" target="_blank"> ASDFGetfrate.m</a>:      Get firing rate (per bin) of all the neurons.<br>
-   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFChangeBinning.m" target="_blank"> ASDFChangeBinning.m</a>: Change binning size of ASDF.<br>
-   </li>
+   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFChangeBinning.m" target="_blank"> ASDFChangeBinning.m</a>: Change binning size of ASDF.
+   </li><br>
 
  <li>
-   **Supporting functions:**<br>
+   <b>Supporting functions:</b><br>
    <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/transent_CN.c" target="_blank"> transent_CN.c</a>:      Mex file for rapid calculation of TE. <br>
-   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/transent_CN_perm.c" target="_blank"> transent_CN_perm.c</a>: Mex file for rapid calculation of TE between jittered senders and original receivers. <br>
- </li>
+   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/transent_CN_perm.c" target="_blank"> transent_CN_perm.c</a>: Mex file for rapid calculation of TE between jittered senders and original receivers.
+ </li> <br>
 </ul>
 
    See <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/README_FUNCTIONS_MANUAL.txt" target="_blank"> README_FUNCTIONS_MANUAL.txt</a> for functions description.
