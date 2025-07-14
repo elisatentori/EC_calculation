@@ -100,24 +100,28 @@ __
 -) transent_perm.c     (adapted from ITO_TE) <br>
 
 
-## Demo
+## demo_TE_SC_calculation
 
 <ul>
   <li>Datasets used:<br>
-   - <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Data_CRCNS" target="_blank"> Data_CRCNS</a>: 5 minutes recordings (Spontaneous activity, 2 samples) from the <a href="http://doi.org/10.6080/K0PC308P" target="_blank"> CRCNS</a> data sharing initiative
-  <br>
-   - <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Data_MaxOne" target="_blank"> Data_MaxOne</a>: our lab acquisitions (2 samples). Spontaneous activity, from rat embryo hippocampal cultures coupled with <a href="https://www.mxwbio.com/products/maxone-mea-system-microelectrode-array/" target="_blank"> MaxOne Single-Well HD-MEA System</a>.
+   <ul>
+     <li><a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Data_CRCNS" target="_blank"> demo_TE_SC_calculation/Data_CRCNS</a>: 5 minutes recordings (Spontaneous activity, 2 samples) from the <a href="http://doi.org/10.6080/K0PC308P" target="_blank"> CRCNS</a> data sharing initiative </li>
+   <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Data_MaxOne" target="_blank"> demo_TE_SC_calculation/Data_MaxOne</a>: our lab acquisitions (2 samples). Spontaneous activity, from rat embryo hippocampal cultures coupled with <a href="https://www.mxwbio.com/products/maxone-mea-system-microelectrode-array/" target="_blank"> MaxOne Single-Well HD-MEA System</a>.  </li>
   </li>
 
-  <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/scripts_demo" target="_blank"> scripts_demo</a>:<br>
-    - <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/scripts_demo/TECN_Calculation.m"> TECN_Calculation.m</a>: computes EC (all metrics)<br>
-    - <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/scripts_demo/TECN_Sign.m"> TECN_Sign.m</a>: significance test<br>
-    - <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/scripts_demo/job.sh"> job.sh</a>: to launch the scripts with bash/SLURM
+  <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/scripts_demo" target="_blank"> demo_TE_SC_calculation/scripts_demo</a>:
+    <ul>
+    <li> <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/scripts_demo/TECN_Calculation.m"> TECN_Calculation.m</a>: computes EC (all metrics)</li>
+    <li> <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/scripts_demo/TECN_Sign.m"> TECN_Sign.m</a>: significance test</li>
+    <li> <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/scripts_demo/job.sh"> job.sh</a>: to launch the scripts with bash/SLURM</li>
+    </ul>
   </li>
 
-  <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Notebooks_ECoutputs" target="_blank"> Notebooks_ECoutputs</a>:<br>
-    -  <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/Notebooks_ECoutputs/ongoing_activity_and_EC_visualization.ipynb" target="_blank"> ongoing_activity_and_EC_visualization.ipynb</a>: to manage spike-trains and visualize EC
-    -  <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/Notebooks_ECoutputs/utils" target="_blank"> utils</a>: functions useful for anaysis
+  <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Notebooks_ECoutputs" target="_blank"> Notebooks_ECoutputs</a>:
+    <ul>
+    <li>  <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/Notebooks_ECoutputs/ongoing_activity_and_EC_visualization.ipynb" target="_blank"> ongoing_activity_and_EC_visualization.ipynb</a>: to manage spike-trains and visualize EC</li>
+    <li>  <a href="https://github.com/elisatentori/EC_calculation/blob/main/demo_TE_SC_calculation/Notebooks_ECoutputs/utils" target="_blank"> utils</a>: functions useful for anaysis</li>
+      </ul>
   </li>
 </ul>
 
