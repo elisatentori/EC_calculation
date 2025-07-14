@@ -129,7 +129,5 @@ __
 </ul>
 
 <br><br><br>
-% Copyright (c) 2025, University of Padua, Italy<br>
-% All rights reserved.<br>
-% Author: Elisa Tentori    <br>                
-%          LiPh Lab - NeuroChip Lab, University of Padua, Italy   <br>
+All rights reserved. Copyright (c) 2025, University of Padua, Italy <br>
+Author: Elisa Tentori. LiPh Lab - NeuroChip Lab, University of Padua, Italy
