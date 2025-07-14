@@ -54,7 +54,6 @@ Last two cells contains special information of the data.
 <ul>
   <li><b>TE, SC and XCov Calculation:</b><br>
   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFTE_CN.m" target="_blank"> ASDFTE_CN.m</a>:      (requires transentmex) delayed higher order TE calculator for ASDF.<br>
-   ASDFTE_CN_perm.m:
   <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/ASDFTE_CN_perm.m" target="_blank"> ASDFTE_CN_perm.m</a>: (requires transentmex) delayed higher order TE calculator for ASDF and ASDF2.<br>
    <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/Calculate_TE_CN.m" target="_blank"> Calculate_TE_CN.m</a>: TE, SC, XCov (and related Z-scored measures) + CI Calculation<br>
    <a href="https://github.com/elisatentori/EC_calculation/blob/main/SC_TE_package/CIReduce.m" target="_blank"> CIReduce.m</a>:        Computes CI for any EC metric<br>
