@@ -105,8 +105,11 @@ __
 <ul>
   <li>Datasets used:<br>
    <ul>
-     <li><a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Data_CRCNS" target="_blank"> demo_TE_SC_calculation/Data_CRCNS</a>: 5 minutes recordings (Spontaneous activity, 2 samples) from the <a href="http://doi.org/10.6080/K0PC308P" target="_blank"> CRCNS</a> data sharing initiative </li>
-   <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Data_MaxOne" target="_blank"> demo_TE_SC_calculation/Data_MaxOne</a>: our lab acquisitions (2 samples). Spontaneous activity, from rat embryo hippocampal cultures coupled with <a href="https://www.mxwbio.com/products/maxone-mea-system-microelectrode-array/" target="_blank"> MaxOne Single-Well HD-MEA System</a>.  </li>
+     <li><a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Data_CRCNS" target="_blank"> demo_TE_SC_calculation/Data_CRCNS</a>: <br>
+       spontaneous activity recordings (5 minutes, 2 samples) from the <a href="http://doi.org/10.6080/K0PC308P" target="_blank"> CRCNS</a> data sharing initiative; </li>
+   <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/Data_MaxOne" target="_blank"> demo_TE_SC_calculation/Data_MaxOne</a>: <br>
+     spontaneous activity recordings (5 minutes, 2 samples) from our lab acquisitions. Data collected from rat embryo hippocampal cultures coupled with <a href="https://www.mxwbio.com/products/maxone-mea-system-microelectrode-array/" target="_blank"> MaxOne Single-Well HD-MEA System</a>.  </li>
+   </ul>
   </li>
 
   <li> <a href="https://github.com/elisatentori/EC_calculation/tree/main/demo_TE_SC_calculation/scripts_demo" target="_blank"> demo_TE_SC_calculation/scripts_demo</a>:
